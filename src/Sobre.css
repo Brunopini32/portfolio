@@ -1,0 +1,138 @@
+/* src/Sobre.css */
+
+.sobre-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  /* background-color removido */
+  font-family: 'Inter', sans-serif;
+  color: #c9d1d9;
+}
+
+/* =========================================
+   BLOCO SUPERIOR (TÍTULO ESQUERDA + TEXTO DIREITA)
+   ========================================= */
+
+.sobre-topo {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: flex-start;
+}
+
+/* Coluna da Esquerda: Título */
+.sobre-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sobre-titulo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.destaque-azul {
+  color: #1f6feb;
+}
+
+/* Linha azul embaixo do título */
+.linha-azul {
+  width: 60px;
+  height: 4px;
+  background-color: #1f6feb;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+}
+
+/* Coluna da Direita: Texto */
+.sobre-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sobre-direita p {
+  font-size: 1rem;
+  color: #8b949e;
+  line-height: 1.7;
+}
+
+/* =========================================
+   GRID DE INFORMAÇÕES (EMBAIXO)
+   ========================================= */
+
+.sobre-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #21262d;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.info-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(31, 111, 235, 0.1);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.info-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.info-label {
+  font-size: 0.7rem;
+  color: #1f6feb;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-valor {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.info-sub {
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+
+@media (max-width: 968px) {
+  .sobre-topo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sobre-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

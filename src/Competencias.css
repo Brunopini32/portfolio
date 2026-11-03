@@ -1,0 +1,92 @@
+/* src/Competencias.css */
+
+.competencias-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #c9d1d9;
+}
+
+.competencias-titulo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  margin-bottom: 4rem;
+}
+
+/* Grid Principal (4 colunas) */
+.competencias-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.competencias-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coluna-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Tags */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.tag:hover {
+  border-color: #1f6feb;
+  color: #ffffff;
+  background-color: rgba(31, 111, 235, 0.1);
+}
+
+/* Linha Inferior (Suporte e Infra) */
+.competencias-linha-inferior {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #21262d;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+
+@media (max-width: 968px) {
+  .competencias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .competencias-titulo {
+    font-size: 2.5rem;
+  }
+
+  .competencias-grid {
+    grid-template-columns: 1fr;
+  }
+}
